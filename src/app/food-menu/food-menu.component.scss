@@ -1,0 +1,40 @@
+
+
+
+li {
+    list-style-type: none;
+}
+
+
+.food-menu-cards{
+    display: flex;
+    // gap: 10px;
+    flex-wrap:wrap;
+    // flex-direction: row;
+
+    height:100%;
+    width: 100%;
+
+    li{
+        display: flex;
+        flex-wrap: wrap;
+        // margin-bottom: 10px;
+        // gap: 10;
+    }
+
+    .food-section{
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+        
+    }
+
+    .card{
+        margin-right: 10px;
+        margin-bottom: 10px;
+
+    }
+
+
+}
+

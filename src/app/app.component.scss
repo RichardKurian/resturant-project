@@ -1,0 +1,22 @@
+.basic-layout{
+    max-width: 100%;
+    // height: 100%;
+
+    // max-width: 100vw;
+    // max-height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    overflow: hidden;
+    overflow-x: auto;
+    
+    height: 100%;
+    
+}
+
+// .header-wrap{
+//     position: fixed;
+//     width: 100%;
+//     // z-index: 99999;
+// }

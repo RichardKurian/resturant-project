@@ -1,0 +1,65 @@
+<!-- <div class="header">
+    <div class="logo-wrap"></div>
+    <div class="quick-links">
+        <a routerLink="food-menu">Food Menu</a>
+        <a routerLink="about">about</a>
+        <a routerLink="login">login</a>
+        <a routerLink="register">Register</a>
+
+    </div>
+</div> -->
+
+
+<div class="header">
+<ul class="nav">
+    <li class="nav-item">
+      <a   routerLink="food-menu" class="nav-link active" href="#">Food Menu</a>
+    </li>
+    <li class="nav-item">
+      <a  routerLink="about" class="nav-link" href="#">About</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="login" class="nav-link" href="#">Login</a>
+    </li>
+    <li class="nav-item">
+        <a routerLink="register" class="nav-link" href="#">Register</a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="cart" class="nav-link" href="#">Cart</a>
+      </li>
+   <li><a>{{totalItem}}</a></li>
+    <!-- <li class="nav-item"> 
+      <a class="nav-link disabled" href="#">Disabled</a>
+    </li> -->
+  </ul>
+</div>
+
+
+
+<!-- 2ND NAV BAR -->
+
+
+<div class="header food-nav">
+      <ul  *ngFor="let item of foodLabel">
+    <li>
+      <a  (click)="scroll(item)">{{item.category}}</a>
+    </li>
+  </ul>
+    <!-- <ul class="nav">
+        <li class="nav-item">
+          <a   routerLink="" class="nav-link active" href="#">Break Fast</a>
+        </li>
+        <li class="nav-item">
+          <a  routerLink="" class="nav-link" href="#">Lunch</a>
+        </li>
+        <li class="nav-item">
+          <a routerLink="" class="nav-link" href="#">Dinner</a>
+        </li>
+        <li class="nav-item">
+            <a routerLink="" class="nav-link" href="#">Snacks</a>
+          </li>
+          <li class="nav-item">
+            <a routerLink="" class="nav-link" href="#">Deserts</a>
+          </li>
+      </ul> -->
+    </div>

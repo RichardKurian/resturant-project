@@ -1,0 +1,35 @@
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(56, 49, 49);
+   height: 100px;
+   align-items: center;
+//    position: fixed;
+
+    a{
+        color:whitesmoke;
+
+        &:hover{
+            color: bisque;
+        }
+    }
+}
+
+.food-nav{
+    height: 50px;
+    background-color: beige;
+    // position: fixed;
+   
+    ul{
+        list-style: none;
+    }
+
+    a{
+        color: black;
+
+        &:hover{
+              
+            color: brown;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+<!-- <ul>
+    <li *ngFor="let item of var1">
+        {{item.category}}
+        <div>
+        <p *ngFor="let subItem of item.items ">{{subItem.itemName}}</p>
+        
+
+    </div>
+    </li>
+
+   
+</ul> -->
+
+
+
+<div class="food-menu-cards">
+  <ul>
+    <div *ngFor="let item of var1">
+      <h4 class="food-section">{{item.category}}</h4>
+      <li>
+        <div *ngFor="let subItem of item.items " class="card" style="width: 18rem;">
+          <img src={{subItem.img}} class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">{{subItem.itemName}}</h5>
+            <p class="card-text">{{subItem.vegan}}</p>
+            <a  class="btn btn-primary"  (click)=addtocart(subItem)>Add to cart</a>
+          </div>
+        </div>
+      </li>
+    </div>
+  </ul>
+</div>
